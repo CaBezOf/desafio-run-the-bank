@@ -27,6 +27,13 @@ public class ContaController {
 		return services.findAll();
 	}
 	
+	@RequestMapping(value="/{id}",
+			method=RequestMethod.GET,
+			produces= MediaType.APPLICATION_JSON_VALUE)
+	public Optional<Conta> findById(@PathVariable("id")Long id) {
+		return services.findById(id);
+	}
+	
 	@RequestMapping(method=RequestMethod.POST,
 			consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces= MediaType.APPLICATION_JSON_VALUE)
@@ -41,7 +48,7 @@ public class ContaController {
 		return services.update(id, conta);
 	}
 	
-	@RequestMapping(value="/{id}", 
+	@RequestMapping(value="delete/{id}", 
 			method=RequestMethod.DELETE)
 	public void delete(@PathVariable("id")Long id) {
 		services.delete(id);
