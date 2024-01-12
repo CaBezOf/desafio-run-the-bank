@@ -49,11 +49,13 @@ endpoint http://localhost:8080/conta/{id} => Busca uma conta pelo id
 
 endpoint http://localhost:8080/conta/delete/{id} => Exclui os dados de uma conta pelo id
 
-Para criar uma conta é feito a um POST com as seguintes informações, agencia, saldo, status.
+Para criar uma conta é feito um POST com as seguintes informações, agencia, saldo, status.
 Exemplo:
 {
     "agencia": "123456",
     "saldo": "22",
     "status": true
 }
+## Sugestão de melhorias:
+Um Controller para o Service Pagamento e outro para o Service Transferencia.
 
