@@ -4,6 +4,17 @@
 
 Projeto desenvolvido com a finalidade de participar do challenge **Run The Bank!**
 
+## Configurações utilizadas:
+
+* Project: Maven
+* Spring Boot: 3.2.1
+* Java: 17
+   * Dependencies:
+   * Spring Data JPA
+   * H2 Database
+   * Apache Camel
+   * Spring web
+   
 ## Como iniciar o projeto:
 
 Para executar a aplicação inicie a Classe **Startup**, e aguarde a subida do Spring boot. 
